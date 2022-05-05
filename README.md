@@ -1,6 +1,7 @@
 # Windows XP X86 Drivers For HP Notebook 15
 
 The HP 15 Notebook (Model g093sa) is a budget Laptop from Hewlett-Packard.
+
 It was released around Jun 2, 2014 (from bios download date).
 
 | Basic                   | Spec Sheet                                                                                                  |
@@ -8,7 +9,7 @@ It was released around Jun 2, 2014 (from bios download date).
 | CPU                     | AMD A4-6210 (x86_64) 1.8ghz 4 cores (No Boost)                                                              |
 | GPU                     | AMD Radeon R3 Graphics (No Working XP Drivers)                                                              |
 | Sound                   | Dual Speakers                                                                                               |
-| Keyboard                | Full-size island-style with numeric keypad                                                                  |                            |
+| Keyboard                | Full-size island-style with numeric keypad                                                                  |                 
 | RAM                     | 4 GB DDR3 1600MHZ                                                                                           |
 | Storage                 | 1TB 5400RPM SATA                                                                                            |
 | Battery                 | Li-Ion 4-cell (41 WHr)                                                                                      |
