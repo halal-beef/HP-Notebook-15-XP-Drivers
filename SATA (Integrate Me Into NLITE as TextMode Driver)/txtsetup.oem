@@ -1,0 +1,40 @@
+#
+#                      TXTSETUP.OEM 
+#
+# (c)2012-2014 Advanced Micro Devices, Inc.
+#  
+# DriverVer = "01/08/2014",6.1.3.00035
+# (6.1.3-00035)
+
+#-----------------------------------------------------------------------------
+[Disks] 
+disk1 = "AMD XP-AHCI Controller 32 Bit",rcxpahci,\
+
+#-----------------------------------------------------------------------------
+[Defaults] 
+SCSI = AMD_SATA
+
+#-----------------------------------------------------------------------------
+[SCSI]
+AMD_SATA = "AMD XP-AHCI Controller 32 Bit [scsiport]"
+
+#-----------------------------------------------------------------------------
+[Files.SCSI.AMD_SATA] 
+inf 	= disk1, rcxpahci.inf
+driver 	= disk1, rcxpahci.sys, rcraid
+catalog = disk1, rcxpahci.cat
+
+#-----------------------------------------------------------------------------
+[HardwareIds.SCSI.AMD_SATA]
+id   = "PCI\VEN_1022&DEV_4391&CC_0106", "rcxpahci"
+id   = "PCI\VEN_1022&DEV_4394&CC_0106", "rcxpahci"
+id   = "PCI\VEN_1022&DEV_7801&CC_0106", "rcxpahci"
+id   = "PCI\VEN_1022&DEV_7804&CC_0106", "rcxpahci"
+id   = "PCI\VEN_1022&DEV_7901&CC_0106", "rcxpahci"
+id   = "PCI\VEN_1022&DEV_7904&CC_0106", "rcxpahci"
+#-----------------------------------------------------------------------------
+[Config.rcxpahci]
+value = parameters\PnpInterface, 5, REG_DWORD, 1
+value = "Parameters\Device", "NumberOfRequests", REG_DWORD, 254
+value = "", Tag, REG_DWORD, 1
+
