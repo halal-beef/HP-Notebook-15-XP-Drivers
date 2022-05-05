@@ -29,7 +29,7 @@ It was released around Jun 2, 2014 (from bios download date).
 
 Any driver other than the SATA driver if loaded into nlite wont be installed in the system you'll have to install them via device manager, idk why.
 
-THe graphics driver on the internet doesnt work and locks up the system on attempted installation
+The graphics driver on the internet doesnt work and locks up the system on attempted installation
 
 No ACPI Support (If anyone has any working ACPI driver for AMD systems please send)
 
